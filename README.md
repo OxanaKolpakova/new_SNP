@@ -2,6 +2,12 @@
 
 BI 2022 Spring Student Project
 
+**Author: <br>**
+Oxana Kolpakova <br>
+**Supervisors: <br>**
+Yuri Barbitov (Bioinformatics institute) <br>
+Mikhail Skoblov (Research Centre for Medical Genetics)<br>
+
 ## Motivation
 
 * Public databases such as ClinVar and OMIM collect data on clinically relevant SNPs that show associations between genome and phenotype changes. 
@@ -90,7 +96,24 @@ You can run new_SNP.ipynb to get statistics. Statistics are in section 6. Descri
 
 The work results are presented in ./Results/new_SNP.ipynb
 
+*	The script work accuracy was validated on coordinates of reference SNPs by Integrative Genomics Viewer, IGV; the script works correctly.
+*	Generated pathogenic and benign SNPs were not previously described in OMIM and ClinVar DBs (Tab.1)
 
-```python
 
-```
+![image table1](./Images/table1.jpg)
+
+## Conclusions
+
+*	We created a tool to generate pathogenic and benign SNPs for OMIM genes by substitution of 1 nucleotide codon resulting in the same amino acid substitution.
+*	Generated pathogenic and benign SNPs were not previously described in OMIM and ClinVar DBs
+*	Generated pathogenic and benign SNPs could increase the accuracy of molecular genetic diagnosis of diseases associated with OMIM genes
+*	This tool can be used to create missense SNPs for other gene lists, not just OMIM.
+
+
+In the future, we plan to
+*	Expand the capabilities of the tool:<br> 
+    * add status gnomAD >0.05<br>
+    * consider exon/intron boundaries, - DNA strand<br>
+    * evaluate the effects of SNPs at splicing boundaries<br>
+*	Apply the script to real medical data to identify new pathogenic SNPs.<br>
+
