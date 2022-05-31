@@ -94,7 +94,7 @@ You can run new_SNP.ipynb to get statistics. Statistics are in section 6. Descri
 
 ## Results 
 
-The work results are presented in ./Results/new_SNP.ipynb
+The work results are presented in ./Code/new_SNP.ipynb
 
 *	The script work accuracy was validated on coordinates of reference SNPs by Integrative Genomics Viewer, IGV; the script works correctly.
 *	Generated pathogenic and benign SNPs were not previously described in OMIM and ClinVar DBs (Tab.1)
